@@ -13,9 +13,6 @@
         });</script>
     <title >FEM</title>
     <style>
-        body{
-            margin: 0;
-        }
         #content-info{
             width: auto;
             margin: 0 auto;
@@ -38,7 +35,7 @@
         .draggable {
             position: absolute;
             cursor: grab;
-            transform: translate3d(-20%,0,0);
+            transform: translate3d(0,0,0);
         }
         .text{
             white-space:nowrap;
@@ -1004,21 +1001,17 @@
         let currentY = 0;
         let initialX;
         let initialY;
-        let xOffset =0;
+        let xOffset = 0;
           let yOffset = 0;
           let scale = 1;
           let scale1 = 1;
           let mouseX;
-      let mouseY;
-          for (const draggable of draggables) {
-      draggable.addEventListener('mousedown', onMouseDown);
-      draggable.addEventListener('mouseup', onMouseUp);
-      draggable.addEventListener('mousemove', onMouseMove);
-      draggable.addEventListener('mousewheel', onMouseWheel);
-      var transform = window.getComputedStyle(draggable).transform;
-        var values = transform.slice(0,-1).split(',');
-        xOffset = values[4];
-        yOffset = values[5];
+        let mouseY;
+          for (const item of draggables) {
+            item.addEventListener('mousedown', onMouseDown);
+            item.addEventListener('mouseup', onMouseUp);
+            item.addEventListener('mousemove', onMouseMove);
+            item.addEventListener('mousewheel', onMouseWheel);
     }
   
     function onMouseDown(e) {
