@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>DiffSound</title>
+  <meta content="DiffSound." name="description" />
+  <meta content="DiffSound Networks" property="og:title" />
+  <meta content="DiffSound" property="og:description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="./google.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({
+      google: {
+        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Changa One:400,400italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Varela Round:400", "Bungee Shade:regular", "Roboto:300,regular,500"
+          , "Radio Canada", "Source Sans Pro", "Roboto Slab"]
+      }
+    });</script>
+
+  <style>
+    body {
+      font-family: 'Microsoft Yahei' !important;
+      text-align: center;
+    }
+
+    .all-wrap {
+      margin: 0 auto;
+      width: 65%;
+    }
+
+    .title {
+      font-family: 'Radio Canada';
+      color: #3c3c3c;
+      font-weight: 800;
+      font-size: 3vw;
+      line-height: 1.3;
+      margin-top: 3vw;
+    }
+
+    .subheader {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      font-weight: 700;
+      font-size: 1.5vw;
+      margin-top: 1vw;
+      margin-bottom: 1.5vw;
+    }
+
+    .affiliation {
+      display: inline;
+      font-family: Ubuntu, Helvetica, sans-serif;
+      color: #333;
+      font-size: 1.2vw;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    .teaser {
+      max-width: 100%;
+    }
+
+    .container-row {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .icon-img-container {
+      position: relative;
+      float: left;
+      width: 33.333%;
+      box-sizing: border-box;
+      margin-top: 1.6vw;
+    }
+
+    .icon-text-container {
+      position: relative;
+      float: left;
+      width: 33.333%;
+      box-sizing: border-box;
+      margin-bottom: 1.6vw;
+    }
+
+    .icon-img {
+      width: 25%;
+      filter: contrast(88%);
+      opacity: .77;
+    }
+
+    .icon-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.75vw;
+      font-weight: 550;
+    }
+
+    .section-title {
+      text-transform: uppercase;
+      font-family: 'Radio Canada';
+      color: #3c3c3c;
+      font-size: 2vw;
+      font-weight: 800;
+      line-height: 1.3;
+
+    }
+
+    .long-text {
+      font-family: 'Source Sans Pro';
+      font-size: 1.3vw;
+      font-weight: 500;
+      line-height: 1.2;
+      text-align: justify;
+    }
+
+    .grey_container {
+      background-color: #f2f2f2;
+    }
+
+    .bibtex {
+      text-align: left;
+      margin-left: 2vw;
+      font-size: larger;
+      font-size: 1.2vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="all-wrap">
+    <h1 class="title">DiffSound: Differentiable Modal Sound Rendering and Inverse Rendering for Diverse Inference Tasks
+    </h1>
+    <h1 class="subheader">SIGGRAPH 2024</h1>
+    <div>
+      <h1 class="affiliation" style="margin-right: 20px;">Xutong Jin*<sup>1</sup></h1>
+      <h1 class="affiliation" style="margin-right: 20px;">Chenxi Xu*<sup>1</sup></h1>
+      <h1 class="affiliation" style="margin-right: 20px;">Ruohan Gao<sup>1</sup></h1>
+      <h1 class="affiliation" style="margin-right: 20px;">Jiajun Wu<sup>1</sup></h1>
+      <h1 class="affiliation" style="margin-right: 20px;">Guoping Wang**<sup>1</sup></h1>
+      <h1 class="affiliation" style="margin-right: 20px;"><a
+          href="http://www.graphics.pku.edu.cn/members/lisheng/index.htm"> Sheng Li**</a> <sup>1</sup></h1>
+    </div>
+
+    <div style="margin-top: 0.4vw;margin-bottom: 1vw;">
+      <h1 class="affiliation" style="margin-right: 40px"><sup>1</sup>Peking University</h1>
+      <h1 class="affiliation"><sup>2</sup>Stanford University</h1>
+      <h1 class="affiliation"><sup>*</sup>Equal contributions</h1>
+      <h1 class="affiliation"><sup>**</sup>Corresponding author</h1>
+    </div>
+
+    <div>
+      <span class="center"><img class="teaser" src="images/teaser.png"></span>
+    </div>
+
+    <div class="container-row">
+      <div class="icon-img-container">
+        <a href="./Paper.pdf">
+          <img src="./images/paper.png" alt="paper" class="icon-img" />
+        </a>
+      </div>
+      <div class="icon-img-container">
+        <a href="https://github.com/hellojxt/NeuralSound">
+          <img src="./images/github.png" alt="github" class="icon-img" />
+        </a>
+      </div>
+      <div class="icon-img-container">
+        <a
+          href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3528223.3530184&file=121-786-supp-video.mp4">
+          <img src="./images/video.png" alt="github" class="icon-img" />
+        </a>
+      </div>
+    </div>
+
+    <div class="container-row">
+      <div class="icon-text-container">
+        <strong class="icon-text">Paper</strong>
+      </div>
+      <div class="icon-text-container">
+        <strong class="icon-text">Github Code</strong>
+      </div>
+      <div class="icon-text-container">
+        <strong class="icon-text">Supplementary Video</strong>
+      </div>
+    </div>
+
+
+    <div class="container-row">
+      <video loop="" playsinline="" controls="" width="100%">
+        <source
+          src="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3528223.3530184&file=121-786-supp-video.mp4"
+          type="video/mp4">
+      </video>
+    </div>
+
+    <div class="w-container">
+      <h2 class="section-title">Abstract</h2>
+      <p class="long-text">Accurately estimating and simulating the physical properties of objects from real-world sound
+        recordings is of great practical importance in the fields of vision, graphics, and robotics. However, the
+        progress in these directions has been limited---prior differentiable rigid or soft body simulation techniques
+        cannot be directly applied to modal sound synthesis due to the high sampling rate of audio, while previous audio
+        synthesizers often do not fully model the accurate physical properties of the sounding objects. We propose
+        DiffSound, a differentiable sound rendering framework for physics-based modal sound synthesis, which is based on
+        an implicit shape representation, a new high-order finite element analysis module, and a differentiable audio
+        synthesizer. Our framework can solve a wide range of inverse problems thanks to the differentiability of the
+        entire pipeline, including physical parameter estimation, geometric shape reasoning, and impact position
+        prediction. Experimental results demonstrate the effectiveness of our approach, highlighting its ability to
+        accurately reproduce the target sound in a physics-based manner. DiffSound serves as a valuable tool for various
+        sound synthesis and analysis applications.
+      </p>
+    </div>
+    <hr>
+
+    <h2 class="section-title">Bibtex</h2>
+    <div class="grey_container">
+      <div class="bibtex">
+        <pre><code>
+@inproceedings{diffsound,
+    title={ DiffSound: Differentiable Modal Sound Rendering and Inverse Rendering for Diverse Inference Tasks},
+    author={Jin, Xutong and Xu, Chenxi and Gao, Ruohan and Wu, jiajun and Wang, Guoping and Sheng, Li},
+    booktitle={ACM SIGGRAPH 2024 Conference Proceedings},
+    year={2024}
+}
+            </code></pre>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
