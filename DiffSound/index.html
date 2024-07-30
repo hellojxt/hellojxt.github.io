@@ -135,7 +135,7 @@
       <h1 class="affiliation" style="margin-right: 20px;">Chenxi Xu*<sup>1</sup></h1>
       <h1 class="affiliation" style="margin-right: 20px;">Ruohan Gao<sup>2</sup></h1>
       <h1 class="affiliation" style="margin-right: 20px;">Jiajun Wu<sup>3</sup></h1>
-      <h1 class="affiliation" style="margin-right: 20px;">Guoping Wang**<sup>1</sup></h1>
+      <h1 class="affiliation" style="margin-right: 20px;">Guoping Wang<sup>1</sup></h1>
       <h1 class="affiliation" style="margin-right: 20px;"><a
           href="http://www.graphics.pku.edu.cn/members/lisheng/index.htm"> Sheng Li**</a> <sup>1</sup></h1>
     </div>
@@ -198,6 +198,13 @@
           type="video/mp4">
       </video>
     </div>
+    <div class="container-row">
+      <video loop="" playsinline="" controls="" width="100%">
+        <source
+          src="./fast-forward.mp4"
+          type="video/mp4">
+      </video>
+    </div>
 
     <div class="w-container">
       <h2 class="section-title">Abstract</h2>
@@ -221,12 +228,23 @@
     <div class="grey_container">
       <div class="bibtex">
         <pre><code>
-@inproceedings{diffsound,
-    title={ DiffSound: Differentiable Modal Sound Rendering and Inverse Rendering for Diverse Inference Tasks},
-    author={Jin, Xutong and Xu, Chenxi and Gao, Ruohan and Wu, jiajun and Wang, Guoping and Sheng, Li},
-    booktitle={ACM SIGGRAPH 2024 Conference Proceedings},
-    year={2024}
-}
+@inproceedings{10.1145/3641519.3657493,
+  author = {Jin, Xutong and Xu, Chenxi and Gao, Ruohan and Wu, Jiajun and Wang, Guoping and Li, Sheng},
+  title = {DiffSound: Differentiable Modal Sound Rendering and Inverse Rendering for Diverse Inference Tasks},
+  year = {2024},
+  isbn = {9798400705250},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3641519.3657493},
+  doi = {10.1145/3641519.3657493},
+  abstract = {Accurately estimating and simulating the physical properties of objects from real-world sound recordings is of great practical importance in the fields of vision, graphics, and robotics. However, the progress in these directions has been limited—prior differentiable rigid or soft body simulation techniques cannot be directly applied to modal sound synthesis due to the high sampling rate of audio, while previous audio synthesizers often do not fully model the accurate physical properties of the sounding objects. We propose DiffSound, a differentiable sound rendering framework for physics-based modal sound synthesis, which is based on an implicit shape representation, a new high-order finite element analysis module, and a differentiable audio synthesizer. Our framework can solve a wide range of inverse problems thanks to the differentiability of the entire pipeline, including physical parameter estimation, geometric shape reasoning, and impact position prediction. Experimental results demonstrate the effectiveness of our approach, highlighting its ability to accurately reproduce the target sound in a physics-based manner. DiffSound serves as a valuable tool for various sound synthesis and analysis applications.},
+  booktitle = {ACM SIGGRAPH 2024 Conference Papers},
+  articleno = {128},
+  numpages = {12},
+  keywords = {audio, differentiable simulation, modal analysis, sound synthesis, vibration},
+  location = {Denver, CO, USA},
+  series = {SIGGRAPH '24}
+  }
             </code></pre>
       </div>
     </div>
